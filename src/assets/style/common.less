@@ -1,0 +1,37 @@
+@vw:19.2vw;
+.btn-edit {
+  margin-right: 16/@vw;
+  background-image: url('../../assets/img/icon-edit.png');
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  transition: all 1s;
+}
+.btn-edit:hover, .btn-edit:focus, .btn-edit:active {
+  background-image: url('../../assets/img/icon-edit-hover.png');
+  // transform: scale(1,1) rotate(360deg);
+}
+.btn-trash {
+  margin-right: 16/@vw;
+  background-image: url('../../assets/img/icon-trash.png');
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  transition: all 1s;
+}
+.btn-trash:hover, .btn-trash:focus, .btn-trash:active {
+  background-image: url('../../assets/img/icon-trash-hover.png');
+  // transform: scale(1,1) rotate(360deg);
+}
+
+// 路由切换动画
+.slider-left-enter, .slider-right-leave-active {
+  opacity: 0;
+  transform: translate(100%,0);
+}
+.slider-left-leave-active, .slider-right-enter {
+  opacity: 0;
+  transform: translate(-100%,0);
+}
